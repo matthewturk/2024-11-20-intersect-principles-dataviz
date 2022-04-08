@@ -1,6 +1,20 @@
 .reveal {
     @basefont: 24px;
 
+    img.headshot {
+        max-width: 200px;
+        border-radius: 10px;
+        max-height: 200px;
+    }
+
+    img.storypanel {
+        max-height: 300px;
+    }
+
+    p.headshot-caption {
+        text-align: center;
+    }
+
     font-size: @basefont;
 
     font-family: 'Questrial', sans-serif;
@@ -48,14 +62,20 @@
         }
         h2 {
             position: relative;
-            top: 50vh;
+            top: 35vh;
             text-align: right;
         }
         p {
             position: relative;
-            top: 50vh;
+            top: 35vh;
             text-align: right;
         }
+    }
+
+    .textbottom {
+        position: relative;
+        top: 50vh;
+        text-align: right;
     }
 
     table { 
