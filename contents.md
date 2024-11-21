@@ -1,6 +1,6 @@
 <!-- .slide: class="titleslide" -->
 
-# Data Storytelling and Data Viz
+# The Principles of Effective Data Visualization
 
 ## Matthew Turk
 
@@ -13,10 +13,10 @@ University of Illinois at Urbana-Champaign<br/>
 
 ## Thank you
 
-Before I begin, I want to say thank you for inviting me to give this talk today.
+Thank you for inviting me to give this talk today.
 
-I'm really glad I get to meet all of you, and share with you some ideas about
-visualization.
+It's been a bit of a journey to get here, and I'm really grateful for the
+opportunity to connect with you all.
 
 ---
 
@@ -34,8 +34,11 @@ visualization.
 ## This Talk
 
 <ul>
+<li class="fragment">What does visualization accomplish?</li>
 <li class="fragment">Why is storytelling important in visualization?</li>
-<li class="fragment">How can we apply this?</li>
+<li class="fragment">What is visualization?</li>
+<li class="fragment">How can we visualize to tell our stories?</li>
+<li class="fragment">What does visualization <i>mean</i>?</li>
 </ul>
 
 ---
@@ -76,9 +79,9 @@ Meagan Lang <!-- .element: class="headshot-caption" -->
 </div>
 <div class="col" data-markdown=true>
 
-![Jared Coughlin](https://raw.githubusercontent.com/data-exp-lab/data-exp-lab.github.io/4ff6549d71c67b62b958fa6d8ff66c3dd2a13356/assets/img/people/jcoughlin11.jpg) <!-- .element: class="headshot" -->
+![Shin-Rong Tsai](https://raw.githubusercontent.com/data-exp-lab/data-exp-lab.github.io/refs/heads/main/assets/img/people/srtsai.jpg) <!-- .element: class="headshot" -->
 
-Jared Coughlin <!-- .element: class="headshot-caption" -->
+Shin-Rong Tsai <!-- .element: class="headshot-caption" -->
 
 </div>
 <div class="col" data-markdown=true>
@@ -92,7 +95,7 @@ Chris Havlin <!-- .element: class="headshot-caption" -->
 
 ---
 
-## Credits: Local
+## Credits: Collaborators
 
 <div class="multiCol" data-markdown=true>
 
@@ -112,6 +115,12 @@ Dr. Jill Naiman <!-- .element: class="headshot-caption" -->
 
 </div>
 
+<div class="col" data-markdown=true>
+
+![Paul Ivanov](https://avatars.githubusercontent.com/u/118211?v=4) <!-- .element: class="headshot" -->
+
+Paul "$\pi$" Ivanov <!-- .element: class="headshot-caption" -->
+
 </div>
 
 ---
@@ -127,11 +136,11 @@ Before we get too far, I want to set the stage for how *I* got here.
 ## Cartoon History of the Universe
 
 <div class="multiCol">
-<div class="col">
-<div class="fig-container" data-style="height: 600px;" data-file="/2019-12-09-qmc-hamm-research-overview/figures/collapse_heating.html" data-markdown=true>
+<div class="col" style="width: 60%">
+<div class="fig-container" data-style="margin: 0px; width: 550px; height: 650px;" data-file="/figures/collapse-heating" data-markdown=true>
 </div>
 </div>
-<div class="col" data-markdown=true>
+<div class="col" style="width: 40%;" data-markdown=true>
 <p class="fragment" data-fragment-index="0">After recombination, the universe was in a nearly-but-not-totally homogeneous state, seeded with instabilities and with a few residual electrons.</p>
 <div class="fragment" data-fragment-index="1">
 <p>Early-on, dark matter clumps collected and formed "halos," drawing in baryonic material.</p>
@@ -146,8 +155,8 @@ Before we get too far, I want to set the stage for how *I* got here.
 ## Molecular Hydrogen
 
 <div class="multiCol">
-<div class="col" data-markdown=true>
-<div class="fig-container" data-style="height: 400px;" data-file="/2019-12-09-qmc-hamm-research-overview/figures/three_body.html" data-markdown=true>
+<div class="col" style="width: 60%;" data-markdown=true>
+<div class="fig-container" data-style="width: 550px; height: 450px;" data-file="/figures/three-body/" data-markdown=true>
 </div>
 <div class="fragment" data-fragment-index="1">
 $$
@@ -160,7 +169,7 @@ $$
 $$
 </div>
 </div>
-<div class="col" data-markdown=true>
+<div class="col" style="width: 40%;" data-markdown=true>
 <p data-markdown=true>In an environment absent heavy elements, the mechanisms by which gas can cool are quite limited.  The principal coolant is molecular hydrogen, which forms first via electron association ($\mathrm{H}^{-}$) and then through three body interactions.</p>
 <p class="fragment" data-markdown=true>
 This formation channel results in molecular hydrogen that begins in an excited state.
@@ -181,17 +190,17 @@ This molecule then quickly de-excites through collisions, resulting in a net hea
 
 ---
 
-<div class="fig-container" data-file="/2020-10-26-visastro-grammar-of-analysis/figures/decoding.html" data-markdown=true>
+<div class="fig-container" data-file="/figures/decoding-images/" data-markdown=true>
 </div>
 
 ---
 
-<!--.slide: data-background-image="https://www.nasa.gov/sites/default/files/thumbnails/image/orion-nebula-xlarge_web.jpg" 
+<!--.slide: data-background-image="images/Orion.jpg" 
             data-background-size="cover" data-background-repeat="none" -->
 
 ---
 
-<div class="fig-container" data-file="/2020-10-26-visastro-grammar-of-analysis/figures/orion_light.html" data-markdown=true>
+<div class="fig-container" data-file="/figures/orion-observe/" data-markdown=true>
 </div>
 
 ---
@@ -220,7 +229,7 @@ $$\begin{aligned}{\partial \rho  \over \partial t}+\nabla \cdot (\rho \mathbf{v}
 
 <div class="multiCol">
 <div class="col">
-<div class="fig-container" data-style="height: 600px;" data-file="/2020-10-26-visastro-grammar-of-analysis/figures/kh_example.html" data-markdown=true>
+<div class="fig-container" data-style="height: 600px;" data-file="/figures/kh-evolve/" data-markdown=true>
 </div>
 </div>
 <div class="col" data-markdown=true>
@@ -255,7 +264,7 @@ Our understanding of the process of visualization, cognition, and semantically-m
 <div class="multiCol">
 <div class="col">
 
-![](images/s1_0.png)<!-- .element: class="storypanel fragment" -->
+![](images/s1_0.png)<!-- .element: class="storypanel" -->
 
 </div>
 <div class="col">
@@ -279,60 +288,6 @@ Our understanding of the process of visualization, cognition, and semantically-m
 
 ---
 
-<div class="multiCol">
-<div class="col">
-
-![](images/s2_0.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-<div class="col">
-
-![](images/s2_1.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-</div>
-<div class="multiCol">
-<div class="col">
-
-![](images/s2_2.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-<div class="col">
-
-&nbsp;
-
-</div>
-</div>
-
----
-
-<div class="multiCol">
-<div class="col">
-
-![](images/s3_0.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-<div class="col">
-
-![](images/s3_1.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-</div>
-<div class="multiCol">
-<div class="col">
-
-![](images/s3_2.png)<!-- .element: class="storypanel fragment" -->
-
-</div>
-<div class="col">
-
-&nbsp;
-
-</div>
-</div>
-
----
-
 ## The Storytelling Triangle
 
 <div class="multiCol">
@@ -348,7 +303,7 @@ Our understanding of the process of visualization, cognition, and semantically-m
 
 </div>
 <div class="col">
-<div class="fig-container" data-file="figures/storytelling.html" data-preload data-style="width: 700px;">
+<div class="fig-container" data-file="/figures/storytelling-triangle/" data-preload data-style="width: 700px;">
 </div>
 
 ---
@@ -386,41 +341,19 @@ information.
 
 ---
 
-
 ## What is a visualization?
 
  > Computer-based *visualization* systems provide visual representations of
  > datasets designed to help people carry out tasks more effectively.
 
-<p class="right">
+<div class="right">
+<p>
 Tamara Munzer, <i>Visualization Analysis & Design</i>
 </p>
 
-<div class="fragment" data-markdown=true>
+<p class="fragment">Data Viz is <b>task-oriented</b>. </p>
 
----
-
-## What is a visualization?
-
-Data Viz is **task-oriented**.
-
-<!-- .slide: data-background-image="https://www.savalli.us/BIO370/Anatomy/AnatomyImages/TyrannosaurusSkeletonLabel.jpg" data-background-size="auto" -->
-
----
-
-## What is a visualization?
-
-Artistic representations are used to convey emotions:
-
-<!-- .slide: data-background-image="https://i.etsystatic.com/5150206/r/il/fe175b/1823842266/il_570xN.1823842266_b9y3.jpg" data-background-size="auto" -->
-
----
-
-## What is a visualization?
-
-Movies, comics, or other cinematic representations are used to tell stories:
-
-<!-- .slide: data-background-image="http://www.dinopit.com/wp-content/uploads/2012/08/funny-dinosaur.jpg" data-background-size="auto" -->
+</div>
 
 ---
 
@@ -428,9 +361,7 @@ Movies, comics, or other cinematic representations are used to tell stories:
 
 (Or rather, why _wouldn't_ we visualize?)
 
----
-
-<iframe width="1024" height="576"
+<iframe class="fragment" width="1024" height="576"
 src="https://www.youtube.com/embed/In72QAQJ1tY?rel=0" frameborder="0"
 allow="encrypted-media" allowfullscreen></iframe>
 
@@ -520,9 +451,30 @@ Statistics can be useful, but visualization generated context!
 
 "Visualizing data" is not a strict subset of "making an image."
 
- * Collection of the data
- * Organization of that data
- * Representation of that data
+ * Collection of the data <!-- .element: class="fragment" -->
+ * Organization of that data <!-- .element: class="fragment" -->
+ * Representation of that data <!-- .element: class="fragment" -->
+
+---
+
+<!-- .slide: data-background-image="images/hearts_bw.svg" data-background-size="contain" -->
+
+ * Some fixed maximum amount of damage
+ * Each time damage is taken, decrement
+ * Each time damage is reversed, increment
+ * Display number of hearts as appropriate
+
+---
+
+2 out of 3 "points"
+
+<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
+
+---
+
+<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
+
+![](images/doom_status.png)
 
 
 ---
@@ -531,31 +483,11 @@ Statistics can be useful, but visualization generated context!
 
 We tell lies to visualize, but we _must_ be honest.
 
- * No representation is going to convey the entire complexity of a dataset.
- * Some representations are better than others.
+ * No representation is going to convey the entire complexity of a dataset. <!-- .element: class="fragment" -->
+ * Some representations are better than others. <!-- .element: class="fragment" -->
+ * "Principle of Proportional Ink" <!-- .element: class="fragment" -->
 
----
-
-# Tenet 2:
-
-"The Principle of Proportional Ink" -- [callingbullshit.org](https://callingbullshit.org/)
-<!-- .slide: data-background-image="images/proportionalInk.png" data-background-size="auto 50%" -->
-
----
-
-# Tenet 2:
-
-"Spurious Correlations" -- [tylervigen.com](https://tylervigen.com/)
-
-<!-- .slide: data-background-image="images/spurious.png" data-background-size="auto 50%" -->
-
----
-
-<!-- .slide: data-background-image="images/barCharts.png" data-background-size="contain" -->
-
----
-
-<!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
+![](images/proportionalInk.png)<!-- .element: class="fragment" style="height: 300px;"-->
 
 ---
 
@@ -588,27 +520,6 @@ We tell lies to visualize, but we _must_ be honest.
  1. The image is then rasterized and displayed
 
 </div>
-
----
-
-<!-- .slide: data-background-image="images/hearts_bw.svg" data-background-size="contain" -->
-
- * Some fixed maximum amount of damage
- * Each time damage is taken, decrement
- * Each time damage is reversed, increment
- * Display number of hearts as appropriate
-
----
-
-2 out of 3 "points"
-
-<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
-
----
-
-<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
-
-![](images/doom_status.png)
 
 ---
 
@@ -759,17 +670,259 @@ How controlling of the narrative process are you?
 
 ---
 
-# Wrapping Up
+# What does visualization *mean*?
 
-How can we take these different aspects of the "why" and the "how" of our storytelling and construct our stories?
+It's hard to discuss this outside of some specific examples.
 
-More specifically, how can we identify different *classes* of data that fall easily into these different models?
+Let's think about simulations of astrophysical phenomena.
 
 ---
 
-# Thank You
+# Vocabulary of Data Analysis
 
-Thank you for this opportunity to talk with you today, and I look forward to
-getting to know you folks as you move through the program!
+<div class="appearing_row" style="margin-top: 1em;">
+  <div class="fragment" data-fragment-index=1>
+  <div class="right_align">
+    <span><i class="fas fa-align-right fa-5x"></i></span>
+  </div>
+  </div>
+  <div class="fragment" data-fragment-index=1>
+  <div class="left_align" style="font-size: 200%;">
+    Registration
+  </div>
+  </div>
+</div>
 
-(And if there's any time, let's talk viz tools!)
+<br clear="all"/>
+
+<div class="appearing_row" style="margin-top: 1em;">
+  <div class="fragment" data-fragment-index=2>
+  <div class="right_align">
+    <span><i class="fas fa-calculator fa-5x"></i></span>
+  </div>
+  </div>
+  <div class="fragment" data-fragment-index=2>
+  <div class="left_align" style="font-size: 200%;">
+    Transformation
+  </div>
+  </div>
+</div>
+
+<br clear="all"/>
+
+<div class="appearing_row" style="margin-top: 1em;">
+  <div class="fragment" data-fragment-index=3>
+  <div class="right_align">
+    <span><i class="fas fa-object-group fa-5x"></i></span>
+  </div>
+  </div>
+  <div class="fragment" data-fragment-index=3>
+  <div class="left_align" style="font-size: 200%;">
+    Selection
+  </div>
+  </div>
+</div>
+
+<br clear="all"/>
+
+<div class="appearing_row" style="margin-top: 1em;">
+  <div class="fragment" data-fragment-index=4>
+  <div class="right_align">
+    <span><i class="fas fa-mortar-pestle fa-5x"></i></span>
+  </div>
+  <div class="fragment" data-fragment-index=4>
+  <div class="left_align" style="font-size: 200%;">
+    Reduction
+  </div>
+  </div>
+</div>
+
+<br clear="all"/>
+
+---
+
+<div class="multiCol">
+<div class="col">
+
+# Registration
+
+<p class="fragment">Data is laid out on <b>disk</b> in some manner that may or may not correspond to the spatial organization or physical meaning of what it represents.</p>
+
+<p class="fragment">This data can be laid out in a data structure in <b>memory</b> that represents its logical ordering, with axes and dimensions.</p>
+
+<p class="fragment">Finally, we can register one or multiple datasets in a consistent <b>spatial</b> representation so that we can query fields at specific locations and define $f(\mathbf{x})$.</p>
+
+</div>
+
+<div class="col">
+<div class="fig-container" data-file="/figures/vg-registration/" data-preload data-style="height: 650px;">
+</div>
+</div>
+</div>
+
+---
+
+<div class="multiCol">
+<div class="col" style="width: 40%;">
+
+# Registration
+
+<p class="fragment">Given a functional form, discretely sampled data can also be registered for analysis, regardless of its layout on disk.</p>
+
+<div class="fragment" data-markdown=true>
+<p>This data may carry with it attributes regarding the density of samples, its neighbors, and fundamental quantities, which can be input into a sampling function over a location.</p>
+
+`$$ A(\mathbf{r}) = \int A(\mathbf{r}')W(|\mathbf{r} - \mathbf{r}'|, h)\mathrm{d} V(\mathbf{r}') $$`
+</div>
+
+</div>
+
+<div class="col" style="width: 60%;">
+<div class="fig-container" data-file="/figures/vg-particle-registration" data-preload data-style="height: 600px; width: 550px;">
+</div>
+</div>
+</div>
+
+---
+
+<div class="multiCol">
+<div class="col">
+<div class="fig-container" data-file="/figures/vg-transformations/" data-preload data-style="height: 768px;">
+</div>
+</div>
+<div class="col" data-markdown=true>
+
+# Transformations
+
+<p class="fragment">"Primitive" variables: $\rho, \mathbf{v}, e, ...$ can be combined in many different ways to produce fields that exist <i>in potentia</i>.</p>
+<p class="fragment">Registration enables combinations at fixed spatial locations.</p>
+<p class="fragment">For example, we can apply the arithmetic manipulation:
+$$|v| = \sqrt{v_x^2 + v_y^2}$$
+</p>
+</div>
+</div>
+
+---
+
+<div class="multiCol">
+<div class="col" data-markdown=true>
+
+# Selection
+
+<p>Points can be filtered based on their connectivity, spatial organization, or criteria from one or more field values.</p>
+</div>
+<div class="col">
+<div class="fig-container" data-file="/figures/vg-transformations/" data-preload data-style="height: 768px;">
+</div>
+</div>
+</div>
+
+---
+
+# Reductions
+
+We can apply reductions along axes, paths and non-trivial manifolds.
+
+<div class="fig-container" data-file="/figures/kh-path/" data-preload data-style="height: 600px;">
+</div>
+
+---
+
+# Composability
+
+<div class="fig-container" data-file="/figures/vg-composability/" data-preload data-style="width: 900px;">
+
+---
+
+## What is `yt`?
+
+<div class="multiCol" data-markdown>
+  <div class="col">
+    <img src="images/yt_logo.svg"/>
+  </div>
+  <div class="col">
+  <div class="appearing_row">
+    <p class="fragment" data-markdown=true>
+        <tt>yt</tt> is a boundary object, between data and semantics.
+    </p>
+    <p class="fragment">
+        <tt>yt</tt> is written largely in Python and Cython, and was originally designed to read strangely-formatted data from adaptive mesh refinement simulations generated by the code Enzo.
+    </p>
+  </div>
+</div>
+
+---
+
+## What does it do?
+
+<p class="">
+   <tt>yt</tt> reads data from around O(several dozen) different data formats, regularizes them into a memory model, and then applies semantics to it.
+</p>
+
+```bash
+$ h5ls galaxy0030/galaxy0030.cpu0000
+
+Grid00000001             Group
+Grid00000075             Group
+Grid00000076             Group
+Grid00000082             Group
+Grid00000110             Group
+Metadata                 Group
+```
+
+---
+
+## Data Model
+
+The data is indexed, read in as requested, and accessed with respect to *physical* coordinates, rather than computationally-oriented systems.
+
+```python
+import yt
+ds = yt.load("galaxy0030/galaxy0030")
+ds.r[:, :, :].max("density")
+ds.r[ (10, 'kpc'):(30, 'kpc'), :, 0.1:0.9 ].integrate("density")
+```
+
+It also makes some visualizations and has lots of astro-specific modules.
+
+---
+
+## What's that all mean?!
+
+Data-format independent analysis and visualization.
+
+![Multiple codes, same analysis](/2020-10-26-visastro-grammar-of-analysis/images/multicode.png)
+
+From left, these are GAMER-2, AREPO and GIZMO data outputs, each utilizing different discretization and data ingestion mechanisms.  Image courtesy John ZuHone.
+
+---
+
+# yt as a substrate
+
+It is on top of this that plugins can be built -- for generating synthetic
+observations ([trident](https://trident.readthedocs.io/en/latest/),
+[powderday](http://powderday.readthedocs.org/),
+[pyXSIM](http://hea-www.cfa.harvard.edu/~jzuhone/pyxsim/)), for interactive
+volume rendering and WASM-based web visualization
+([yt_idv](https://yt-idv.readthedocs.io/en/latest/),
+[widgyts](https://widgyts.readthedocs.org/)), for analyzing in
+astrophysically-specific means
+([yt-astro-analysis](https://yt-astro-analysis.readthedocs.io/en/latest/)), and
+for traversing Halo merger trees ([ytree](https://ytree.readthedocs.org/)).
+
+Once data can be ingested into `yt`, these operations are available independent
+of the type of simulation code that has been used.
+
+---
+
+# Wrapping Up
+
+How can we take these different aspects of the "why" and the "how" of our storytelling and construct our stories? <!-- .element: class="fragment" -->
+
+More specifically, how can we identify different classes of data that fall easily into these different models? <!-- .element: class="fragment" -->
+
+And, in doing so, how do we construct compelling stories about data that simultaneously respect its uniqueness and fundamental un-relatability, while still giving useful, actionable information? <!-- .element: class="fragment" -->
+
+---
+
+# Thank You.
