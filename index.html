@@ -21,6 +21,7 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/notes/notes.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveald3@2.0.0/reveald3.min.js"></script>
 
 
 <link rel="stylesheet/less" type="text/css" href="styles.less" />
@@ -49,9 +50,8 @@
         height: 768,
         margin: 0.02,
         dependencies: [
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3@1.5.5/reveald3.js', async: true}
         ],
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ] ,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, Reveald3 ] ,
         keyboard: {
             /* These are usually not available for us */
             /*
