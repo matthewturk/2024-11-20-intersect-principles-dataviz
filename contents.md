@@ -229,7 +229,7 @@ $$\begin{aligned}{\partial \rho  \over \partial t}+\nabla \cdot (\rho \mathbf{v}
 
 <div class="multiCol">
 <div class="col">
-<div class="fig-container" data-style="height: 600px;" data-file="/figures/kh-evolve/" data-markdown=true>
+<div class="fig-container" data-style="height: 600px;" data-file="/figures/vg-kh-evolve/" data-markdown=true>
 </div>
 </div>
 <div class="col" data-markdown=true>
@@ -812,7 +812,7 @@ $$|v| = \sqrt{v_x^2 + v_y^2}$$
 <p>Points can be filtered based on their connectivity, spatial organization, or criteria from one or more field values.</p>
 </div>
 <div class="col">
-<div class="fig-container" data-file="/figures/vg-transformations/" data-preload data-style="height: 768px;">
+<div class="fig-container" data-file="/figures/vg-kh-selection/" data-preload data-style="height: 768px;">
 </div>
 </div>
 </div>
@@ -823,7 +823,7 @@ $$|v| = \sqrt{v_x^2 + v_y^2}$$
 
 We can apply reductions along axes, paths and non-trivial manifolds.
 
-<div class="fig-container" data-file="/figures/kh-path/" data-preload data-style="height: 600px;">
+<div class="fig-container" data-file="/figures/vg-kh-path/" data-preload data-style="height: 600px;">
 </div>
 
 ---
